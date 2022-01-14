@@ -1,7 +1,82 @@
 /* importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@500;700&display=swap');
 
+
+
 /* general styles */
 body{
     font-family: 'Poppins', sans-serif, 'roboto', Ubuntu;
+    background-color: #aaaaaa0c;
+}
+section{
+    margin: 0 120px;
+}
+
+
+/* navbar styling */
+.parent{
+    display: flex;
+    justify-content: space-between;
+}
+.page-name{
+    font-size: 24px;
+}
+.nav-item>ul{
+    display: flex;
+}
+.nav-item>ul>li{
+    margin-left: 30px;
+    margin-top: 30px;
+    list-style-type: none;
+}
+.nav-item>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+/* after heading part styles here */
+.two-in-one{
+    display: flex;
+}
+.for-text{
+    height: 270px;
+    width: 580px;
+    padding-top: 50px;
+}
+.influencer-title{
+    font-size: 52px;
+    margin: 0;
+}
+.dummy{
+    color: rgba(37, 37, 37, 0.692);
+}
+.prebook{
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #E02C6D;
+    padding: 8px 24px;
+    border-radius: 20px;
+    color: white;
+}
+.for-image{
+    height: 440px;
+    width: 410px;
+    margin-left: 20px;
+}
+.for-image img{
+    width: 100%;
+}
+/* promotion part design */
+.promotion{
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 60px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.promotion img{
+    width: 100%;
+}
+.amazon, .rakuten, .walmart{
+    padding-top: 8px;
 }
