@@ -1,9 +1,13 @@
-/* importing fonts */
+/* ----------- *\ 
+importing fonts
+\* ----------- */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@500;700&display=swap');
 
 
 
-/* general styles */
+/* ----------- *\ 
+general styles
+\* ----------- */
 body{
     font-family: 'Poppins', sans-serif, 'roboto', Ubuntu;
     background-color: #aaaaaa0c;
@@ -13,7 +17,9 @@ section{
 }
 
 
-/* navbar styling */
+/* ----------- *\ 
+navbar styling 
+\* ----------- */
 .parent{
     display: flex;
     justify-content: space-between;
@@ -29,12 +35,20 @@ section{
     margin-top: 30px;
     list-style-type: none;
 }
+.nav-item>ul>li:hover{
+    background-color: #E02C6D;
+    padding: 3px 14px;
+    border-radius: 20px;
+    overflow: hidden;
+}
 .nav-item>ul>li>a{
     text-decoration: none;
     color: black;
     font-size: 16px;
 }
-/* after heading part styles here */
+/* ----------- *\ 
+after heading part styles here 
+\* ----------- */
 .two-in-one{
     display: flex;
 }
@@ -66,7 +80,9 @@ section{
 .for-image img{
     width: 100%;
 }
-/* promotion part design */
+/* ----------- *\ 
+promotion part design 
+\* ----------- */
 .promotion{
     display: flex;
     justify-content: space-between;
@@ -80,7 +96,9 @@ section{
 .amazon, .rakuten, .walmart{
     padding-top: 8px;
 }
-/* popular collection part here */
+/* ----------- *\ 
+popular collection part here 
+\* ----------- */
 .popular-heading{
     text-align: center;
     font-size: 28px;
@@ -91,7 +109,7 @@ section{
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
-.item{
+.item, .creator{
     padding: 5%;
     border-radius: 5px;
     background: #FFFFFF;
@@ -131,4 +149,33 @@ section{
     font-size: 16px;
     color: #E02C6DDE;
     text-decoration: none;
+}
+/* ----------- *\ 
+content creator part here 
+\* ----------- */
+.creators{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.creator img{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(56, 48, 170, 0.425);
+}
+.creator-name{
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.creator-info{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.hire-me a{
+    text-decoration: none;
+    color: #E02C6D;
+    margin-bottom: 0px;
 }
