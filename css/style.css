@@ -27,6 +27,9 @@ navbar styling
 .page-name{
     font-size: 24px;
 }
+.unique-color{
+    color: #E02C6D;
+}
 .nav-item>ul{
     display: flex;
 }
@@ -35,16 +38,13 @@ navbar styling
     margin-top: 30px;
     list-style-type: none;
 }
-.nav-item>ul>li:hover{
-    background-color: #E02C6D;
-    padding: 3px 14px;
-    border-radius: 20px;
-    overflow: hidden;
-}
 .nav-item>ul>li>a{
     text-decoration: none;
     color: black;
     font-size: 16px;
+}
+.nav-item>ul>li>a:hover{
+    color: #E02C6D;
 }
 /* ----------- *\ 
 after heading part styles here 
@@ -87,8 +87,10 @@ promotion part design
     display: flex;
     justify-content: space-between;
     padding: 30px 60px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(rgb(146, 233, 76), rgb(214, 26, 26), rgb(22, 228, 50));
+    border-image-slice: 1;
 }
 .promotion img{
     width: 100%;
