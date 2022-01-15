@@ -89,7 +89,7 @@ promotion part design
     padding: 30px 60px;
     border-top: 2px solid;
     border-bottom: 2px solid;
-    border-image: linear-gradient(rgb(146, 233, 76), rgb(214, 26, 26), rgb(22, 228, 50));
+    border-image: linear-gradient(rgb(44, 235, 76), rgb(80, 228, 22));
     border-image-slice: 1;
 }
 .promotion img{
@@ -172,7 +172,7 @@ content creator part here
     margin-bottom: 0px;
 }
 .creator-info{
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -180,4 +180,32 @@ content creator part here
     text-decoration: none;
     color: #E02C6D;
     margin-bottom: 0px;
+}
+/* ----------- *\ 
+Footer part here 
+\* ----------- */
+footer{
+    background-color: black;
+    color: white;
+    padding: 5%;
+    margin: 0px;
+}
+.center-align{
+    text-align: center;
+}
+.footer-heading{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+}
+.dummy-footer{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px;
+}
+.icon-design{
+    height: 32px;
+    width: 32px;
+    margin-left: 16px;
+    color: white;
 }
