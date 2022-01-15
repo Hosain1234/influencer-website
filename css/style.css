@@ -54,7 +54,6 @@ after heading part styles here
     display: flex;
 }
 .for-text{
-    border: 1px solid black;
     width: 58%;
     padding-top: 20px;
 }
@@ -74,7 +73,6 @@ after heading part styles here
     color: white;
 }
 .for-image{
-    border: 1px solid black;
     width: 40%;
     margin-left: 2%;
 }
@@ -215,6 +213,9 @@ Responsive styles from here
 \* ----------- */
 /* -------------- for mobile ----------------- */
 @media only screen and (max-width:688px) {
+    body{
+        background-color: rgba(0, 0, 255, 0.144);
+    }
     section{
         margin: 0 30px;
     }
@@ -242,6 +243,31 @@ Responsive styles from here
     }
     .creators{
         grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+}
+/* ------------- for tablet ------------- */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    body{
+        background-color: rgba(222, 184, 135, 0.219);
+    }
+    section{
+        margin: 0 50px;
+    }
+    .page-name{
+        font-size: 16px;
+    }
+    .nav-item{
+        font-size: 14px;
+    }
+    .promotion{
+        margin-top: 150px;
+    }
+    .all-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .creators{
+        grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 30px;
     }
 }
