@@ -11,6 +11,7 @@ general styles
 body{
     font-family: 'Poppins', sans-serif, 'roboto', Ubuntu;
     background-color: #aaaaaa0c;
+    margin: 0px;
 }
 section{
     margin: 0 120px;
@@ -53,9 +54,9 @@ after heading part styles here
     display: flex;
 }
 .for-text{
-    height: 270px;
-    width: 580px;
-    padding-top: 50px;
+    border: 1px solid black;
+    width: 58%;
+    padding-top: 20px;
 }
 .influencer-title{
     font-size: 52px;
@@ -73,9 +74,9 @@ after heading part styles here
     color: white;
 }
 .for-image{
-    height: 440px;
-    width: 410px;
-    margin-left: 20px;
+    border: 1px solid black;
+    width: 40%;
+    margin-left: 2%;
 }
 .for-image img{
     width: 100%;
@@ -208,4 +209,39 @@ footer{
     width: 32px;
     margin-left: 16px;
     color: white;
+}
+/* ----------- *\ 
+Responsive styles from here
+\* ----------- */
+/* -------------- for mobile ----------------- */
+@media only screen and (max-width:688px) {
+    section{
+        margin: 0 30px;
+    }
+    .page-name{
+        text-align: center;
+        align-items: center;
+    }
+    .for-text{
+        width: 100%;
+    }
+    .influencer-title{
+        font-size: 36px;
+    }
+    .for-image{
+        display: none;
+    }
+    .nav-item{
+        display: none;
+    }
+    .promotion{
+        display: none;
+    }
+    .all-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .creators{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
 }
